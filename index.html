@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="load_words.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Typing</title>
+</head>
+<body>
+    <div class="window">
+        <div class="header" id="header"><span onclick="set_wordcount(10)">10</span> / <span onclick="set_wordcount(25)">25</span> / 
+            <span onclick="set_wordcount(50)">50</span> / <span onclick="set_wordcount(100)">100</span> / <span onclick="custom_wordcount()">custom</span>
+        </div>
+        <div class="result" id="result"></div>
+        <div class="output" id="output"></div>
+        <input type="text" class="input" id="input" tabindex="1">
+        <button class="redo" id="redo" onclick="refresh()" tabindex="2">Redo</button>
+    </div>
+    <script src="setup.js"></script>
+</body>
+</html>
