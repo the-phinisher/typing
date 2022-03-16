@@ -79,13 +79,13 @@ class Generation {
         for (let i = 0; i < this.wordcount; i++) {
             if(i < this.trace) {
                 if(this.word_correct[i]) {
-                    display_text += '<font color="green">'+this.word_list[i]+' </font>'
+                    display_text += '<span class="correct">'+this.word_list[i]+' </span>'
                 } else {
-                    display_text += '<font color="#e00000">'+this.word_list[i]+' </font>'
+                    display_text += '<span class="wrong">'+this.word_list[i]+' </span>'
                 }
             }
             else if (i == this.trace) {
-                display_text += '<font color="violet">'+this.word_list[i]+' </font>'
+                display_text += '<span class="current">'+this.word_list[i]+' </span>'
             }
             else {
                 display_text += this.word_list[i] + ' '
