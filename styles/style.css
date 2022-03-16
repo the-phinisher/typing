@@ -89,3 +89,7 @@ body {
 .current {
     color: #dd30dd;
 }
+
+.feedbackwrong {
+    background-color: rgba(255,0,0,0.2);
+}
