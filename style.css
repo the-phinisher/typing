@@ -7,6 +7,14 @@
     
 }
 
+*:focus {
+    outline: none;
+}
+
+*:hover {
+    cursor: default;
+}
+
 body {
     display: grid;
     place-items: center;
@@ -14,9 +22,13 @@ body {
     height: 100vh;
 }
 
-span {
+.select {
     text-decoration: underline;
     text-underline-offset: 0.1rem;
+}
+
+.select:hover, .redo:hover {
+    cursor: pointer;
 }
 
 .window {
@@ -39,18 +51,6 @@ span {
     border-radius: 1%;
     padding: 1%;
     padding-left: 2%;
-}
-
-*:focus {
-    outline: none;
-}
-
-*:hover {
-    cursor: default;
-}
-
-span:hover, .redo:hover {
-    cursor: pointer;
 }
 
 .input:hover {
@@ -76,4 +76,16 @@ span:hover, .redo:hover {
 .result {
     position: absolute;
     transform: translateX(-100%) translate(47vw,-9vh);
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+.current {
+    color: violet;
 }
