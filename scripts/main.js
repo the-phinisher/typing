@@ -25,4 +25,5 @@ document.onkeydown = (keyDownEvent) => {
 
 document.onkeyup = (keyUpEvent) => {
     isPressedKey[keyUpEvent.key] = false
+    feedback()
 }

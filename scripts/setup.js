@@ -63,6 +63,20 @@ function refresh() {
     input.value = ''
 }
 
+function feedback() {
+    correct = feedbackeval()
+    if (correct) input.classList.remove("feedbackwrong")
+    else input.classList.add("feedbackwrong")
+}
+
+function feedbackeval() {
+    trace_word = input.value
+    target_word = generated.current_word()
+    for (let i = trace_word.length - 1; i >= 0; i--) {
+        if (trace_word[i] != target_word[i]) return false
+    }
+    return true
+}
 
 
 class Generation {
