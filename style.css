@@ -79,13 +79,13 @@ body {
 }
 
 .correct {
-    color: green;
+    color: #02ab02;
 }
 
 .wrong {
-    color: red;
+    color: #da0000;
 }
 
 .current {
-    color: violet;
+    color: #dd30dd;
 }
